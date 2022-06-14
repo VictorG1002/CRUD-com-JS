@@ -6,6 +6,27 @@
   align-items: center;
   justify-content: center;
 }
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.container3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.caixa2 {
+  padding: 10px;
+  margin-top: 3rem;
+  background-color: RGBA(0, 0, 0, 0.06);
+  box-shadow: 2px 5px 5px RGBA(0, 0, 0, 0.24);
+  height: 150px;
+  width: 40%;
+  border-radius: 15px;
+}
 
 .img {
   justify-content: flex-start;
@@ -33,10 +54,49 @@
   box-shadow: 2px 5px 5px RGBA(0, 0, 0, 0.15);
 }
 
+.mensagem {
+  color: red;
+  font-size: 10px;
+}
+
+.botao2 {
+  padding: 12px;
+  border-radius: 18px;
+  margin-top: 90px;
+  margin-left: 10px;
+  border: 10px;
+  background-color: #f6e05e;
+  box-shadow: 2px 5px 5px RGBA(0, 0, 0, 0.15);
+}
+.botao3 {
+  padding: 12px;
+  border-radius: 18px;
+  margin-top: 90px;
+  margin-left: 10px;
+  border: 10px;
+  background-color: #f56565;
+  box-shadow: 2px 5px 5px RGBA(0, 0, 0, 0.15);
+}
 .botao:hover {
   background-color: #38a169;
 }
 
 .botao:active {
   background-color: #2f855a;
+}
+
+.botao2:hover {
+  background-color: #ecc94b;
+}
+
+.botao2:active {
+  background-color: #d69e2e;
+}
+
+.botao3:hover {
+  background-color: #e53e3e;
+}
+
+.botao3:active {
+  background-color: #c53030;
 }
