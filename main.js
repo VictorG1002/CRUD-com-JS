@@ -5,7 +5,6 @@ let posts = document.getElementById('posts')
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  console.log('botao clicado')
 
   ValidaForm()
 })
@@ -20,11 +19,9 @@ const lembretes = {}
 
 let aceitaLembretes = () => {
   lembretes['text'] = input.value
-  console.log(lembretes)
   criaPost()
 }
 
-// o erro ta no conteudo.inner amanha voce resolve
 let criaPost = () => {
   posts.innerHTML += ` 
    <div class="container1">
@@ -32,10 +29,14 @@ let criaPost = () => {
       <h2 id="conteudo">${lembretes.text}</h2>
       <div class="container2">
          <button class="botao2">editar</button>
-         <button class="botao3">apagar</button>
+         <button class="botao3" onClick="removePost(this)">apagar</button>
        </div>
       </div>
      </div>
     `
   input.value = ''
+}
+
+let removePost = e => {
+  e.parentElement.parentElement.remove()
 }
