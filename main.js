@@ -26,7 +26,7 @@ let aceitaLembretes = () => {
 
 // o erro ta no conteudo.inner amanha voce resolve
 let criaPost = () => {
-  posts.innerHTML = +` 
+  posts.innerHTML += ` 
    <div class="container1">
     <div class="caixa2">
       <h2 id="conteudo">${lembretes.text}</h2>
